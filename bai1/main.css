@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background: #1672b4;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px;
+}
+.nav a{
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 500;
+    color:#fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.nav a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    left:0;
+    bottom: -6px;
+    background: #fff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: .5s;
+}
+.nav a:hover::after{
+    transform: scaleY(1);
+  
+}
+.header h2{
+    font-size:2em;
+    color:#fff;
+    text-shadow: 
+    0 0 10px rgba(0, 0, 255, 0.7), /* Ánh sáng xanh dương mờ */
+    0 0 20px rgba(0, 0, 255, 0.7), /* Ánh sáng xanh dương mạnh hơn */
+    0 0 30px rgba(0, 0, 255, 0.7), /* Ánh sáng xanh dương mạnh hơn nữa */
+    0 0 40px rgba(0, 0, 255, 1); /* Ánh sáng xanh dương đậm */
+}
+.header{
+    border-bottom: 7px dotted #fff;
+}
+.section{
+    margin:20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    border-bottom: 7px dotted #fff;
+    padding:10px
+}
+.top{
+    margin-left:5px;
+}
+.top h2{
+    margin-bottom:10px;
+    color:#fff;
+    font-size: 2em;
+}
+.top .ctent{
+    color:#fff
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:100px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    margin-left:70px;
+    gap:15px;
+}
+.label label{
+    color:#fff
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    
+}
+.input input {
+    height:25px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+.submit{
+    display: flex;
+    gap: 10px;
+    
+}
+.img img{
+    height:300px;
+    width:400px;
+    margin :20px 200px;
+}
+.text{
+    text-align: center;
+    font-size: 2.2em;
+    color: #3312a1;
+    text-shadow: 5px 5px 2px ;
+    font-weight: 500;
+
+}
+.next{
+    text-align: center;
+    font-size:1.1em;
+    color:#3312a1;;
+    font-weight: 400;
+}
+.last{
+    color:#fff;
+    text-align: center;
+}
